@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz with Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>MCQ Quiz Application</h1>
+        <div id="timer" class="timer">Time Left: 60</div>
+
+        <div id="quiz">
+            <div class="question" id="question">
+                <!-- Question will be injected dynamically here -->
+            </div>
+            <div class="answers">
+                <button class="answer-btn" onclick="checkAnswer('a')">Option A</button>
+                <button class="answer-btn" onclick="checkAnswer('b')">Option B</button>
+                <button class="answer-btn" onclick="checkAnswer('c')">Option C</button>
+                <button class="answer-btn" onclick="checkAnswer('d')">Option D</button>
+            </div>
+            <div id="score" class="score">
+                <!-- Score will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
